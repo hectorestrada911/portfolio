@@ -1,0 +1,26 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules/
+
+# build output
+.next/
+out/
+
+# local env files
+.env*
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# macOS system files
+.DS_Store
+
+# Vercel
+.vercel/
+
+# Optional: large assets (customize as needed)
+public/projects/large-raw-assets/
