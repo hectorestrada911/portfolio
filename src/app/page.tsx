@@ -1,8 +1,9 @@
+// Trigger redeploy: dummy change
+ // Test sync issue
 "use client";
 
 import { Navigation } from '@/components/Navigation';
 import AnimatedCodeBlock from '@/components/AnimatedCodeBlock';
-import SkillBar from '@/components/SkillBar';
 import { AcademicCapIcon, RocketLaunchIcon } from '@heroicons/react/24/solid';
 
 const projects = [
@@ -136,7 +137,7 @@ export default function Home() {
             </div>
             <div className="text-center mt-8">
               <p className="text-lg text-gray-700 dark:text-gray-200 font-medium">
-                Want to know more about my journey? <span className="text-primary-600 dark:text-primary-400 font-semibold">Let's connect.</span>
+                Want to know more about my journey? <span className="text-primary-600 dark:text-primary-400 font-semibold">Let&apos;s connect.</span>
               </p>
             </div>
           </div>
