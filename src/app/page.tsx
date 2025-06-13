@@ -6,6 +6,7 @@ import { Navigation } from '@/components/Navigation';
 import AnimatedCodeBlock from '@/components/AnimatedCodeBlock';
 import { AcademicCapIcon, RocketLaunchIcon } from '@heroicons/react/24/solid';
 import ContactForm from '@/components/ContactForm';
+import Image from 'next/image';
 
 const projects = [
   {
@@ -152,7 +153,7 @@ export default function Home() {
               Here are some of my recent projects that showcase my skills in web development, backend programming, and full-stack integration.
             </p>
             <div className="flex justify-center mb-8">
-              <img src="/projects/bidme-hero.jpg" alt="BidMe Hero" className="rounded-lg shadow-lg max-h-64" />
+              <Image src="/projects/bidme-hero.jpg" alt="BidMe Hero" width={600} height={300} className="rounded-lg shadow-lg max-h-64 w-auto h-auto" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {projects.map((project, idx) => (
@@ -163,10 +164,11 @@ export default function Home() {
                   >
                     {/* Image with overlay, title, and badge */}
                     <div className="relative h-56 w-full overflow-hidden">
-                      <img
+                      <Image
                         src={project.imageUrl || '/window.svg'}
                         alt={project.title}
                         className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+                        fill
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
                       <div className="absolute left-0 bottom-0 p-4 flex flex-col gap-2 w-full">
@@ -224,10 +226,11 @@ export default function Home() {
                     className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden flex flex-col transform transition-all duration-300 hover:scale-105 hover:shadow-xl group relative"
                   >
                     <div className="h-48 w-full relative">
-                      <img
+                      <Image
                         src={project.imageUrl || '/window.svg'}
                         alt={project.title}
                         className="object-cover w-full h-full rounded-t-2xl shadow-md"
+                        fill
                       />
                     </div>
                     <div className="p-6 flex-1 flex flex-col">
