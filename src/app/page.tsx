@@ -63,7 +63,7 @@ export default function Home() {
       <div className="pt-16">
         {/* Hero Section */}
         <section id="home" className="min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#1e293b] to-[#0f172a] transition-colors duration-700">
-          <div className="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center justify-between gap-8 mt-16 sm:mt-24 md:mt-0">
             {/* Left: Intro */}
             <div className="flex-1 text-center md:text-left md:pr-8 animate-hero-fade-in">
               <div className="transition-all duration-700 opacity-0 animate-fade-in-slide-up">
@@ -198,23 +198,23 @@ export default function Home() {
                         <div className="flex flex-col sm:flex-row gap-3 mt-auto">
                           <a
                             href={project.liveUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
                             className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-lg bg-primary-600 text-white hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-600 transition gap-2 shadow-sm"
                           >
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                             View Live
-                          </a>
-                          <a
+          </a>
+          <a
                             href={project.codeUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
                             className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-lg border border-primary-600 text-primary-600 dark:text-primary-400 hover:bg-primary-50 dark:hover:bg-primary-900 transition gap-2 shadow-sm"
-                          >
+          >
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M8 16v-8m8 8v-8M3 20h18" /></svg>
                             View Code
-                          </a>
-                        </div>
+          </a>
+        </div>
                       )}
                     </div>
                   </div>
@@ -247,17 +247,17 @@ export default function Home() {
                         <div className="flex flex-col sm:flex-row gap-3 mt-auto">
                           <a
                             href={project.liveUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
+          target="_blank"
+          rel="noopener noreferrer"
                             className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded bg-primary-600 text-white hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-600 transition gap-2"
                           >
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                             View Live
-                          </a>
-                          <a
+        </a>
+        <a
                             href={project.codeUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
+          target="_blank"
+          rel="noopener noreferrer"
                             className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded border border-primary-600 text-primary-600 dark:text-primary-400 hover:bg-primary-50 dark:hover:bg-primary-900 transition gap-2"
                           >
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M8 16v-8m8 8v-8M3 20h18" /></svg>
@@ -279,7 +279,7 @@ export default function Home() {
             <ContactForm />
           </div>
         </section>
-      </div>
+    </div>
     </>
   );
 }

@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider>
           <main className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
-            {children}
+        {children}
           </main>
           <footer className="w-full border-t border-gray-200 dark:border-gray-800 py-6 flex flex-col items-center justify-center mt-12">
             <div className="flex gap-4">

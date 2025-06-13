@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import ContactForm from '@/components/ContactForm';
 import { Navigation } from '@/components/Navigation';
-import { UserIcon, EnvelopeIcon, PencilIcon, ChatBubbleLeftRightIcon, CheckCircleIcon } from '@heroicons/react/24/outline';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
