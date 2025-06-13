@@ -33,10 +33,28 @@ export default function ContactForm() {
     e.preventDefault();
     setTouched({ name: true, email: true, subject: true, message: true });
     if (!isFormValid) return;
-    setSuccess(true);
-    setTimeout(() => setSuccess(false), 2500);
-    setFormData({ name: '', email: '', subject: '', message: '' });
-    setTouched({ name: false, email: false, subject: false, message: false });
+    try {
+      const res = await fetch('https://formspree.io/f/xkgbrldj', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      });
+      if (res.ok) {
+        setSuccess(true);
+        setTimeout(() => setSuccess(false), 2500);
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        setTouched({ name: false, email: false, subject: false, message: false });
+      } else {
+        alert('There was an error sending your message. Please try again later.');
+      }
+    } catch (err) {
+      alert('There was an error sending your message. Please try again later.');
+    }
   };
 
   const handleChange = (
