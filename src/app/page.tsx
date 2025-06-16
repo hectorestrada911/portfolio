@@ -78,7 +78,7 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start md:ml-4">
                   <a href="#projects" className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-600 transition-transform duration-200 hover:scale-105">View Projects</a>
                   <a href="#contact" className="inline-flex items-center justify-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-base font-medium rounded-md text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-transform duration-200 hover:scale-105">Contact Me</a>
-                  <a href="/resume.pdf" download className="inline-flex items-center justify-center px-6 py-3 border border-blue-500 text-base font-medium rounded-md text-blue-600 dark:text-blue-400 bg-white dark:bg-gray-900 hover:bg-blue-50 dark:hover:bg-gray-800 transition-transform duration-200 hover:scale-105">Download Resume</a>
+                  <a href="/hector-estrada-portfolio.pdf" download className="inline-flex items-center justify-center px-6 py-3 border border-blue-500 text-base font-medium rounded-md text-blue-600 dark:text-blue-400 bg-white dark:bg-gray-900 hover:bg-blue-50 dark:hover:bg-gray-800 transition-transform duration-200 hover:scale-105">Download Portfolio</a>
                 </div>
                 <div className="flex justify-center items-center gap-4 mt-12">
                   <a href="https://github.com/hectorestrada911" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-md text-2xl text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 transition-transform duration-200 hover:scale-110 focus:outline-none" aria-label="GitHub">
@@ -164,12 +164,12 @@ export default function Home() {
                   >
                     {/* Image with overlay, title, and badge */}
                     <div className="relative h-56 w-full overflow-hidden">
-                      <Image
+        <Image
                         src={project.imageUrl || '/window.svg'}
                         alt={project.title}
                         className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
                         fill
-                      />
+        />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
                       <div className="absolute left-0 bottom-0 p-4 flex flex-col gap-2 w-full">
                         <div className="flex items-center gap-2">
@@ -226,7 +226,7 @@ export default function Home() {
                     className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden flex flex-col transform transition-all duration-300 hover:scale-105 hover:shadow-xl group relative"
                   >
                     <div className="h-48 w-full relative">
-                      <Image
+          <Image
                         src={project.imageUrl || '/window.svg'}
                         alt={project.title}
                         className="object-cover w-full h-full rounded-t-2xl shadow-md"
