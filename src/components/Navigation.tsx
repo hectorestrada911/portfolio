@@ -1,8 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { useTheme } from '@/lib/theme';
-import { SunIcon, MoonIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { cn } from '@/lib/utils';
 
 const navigation = [
