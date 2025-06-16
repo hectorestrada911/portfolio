@@ -24,7 +24,7 @@ export function ProjectCard({
   return (
     <div
       className={cn(
-        'bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden',
+        'bg-[#181c24] rounded-lg shadow-lg overflow-hidden',
         className
       )}
     >
@@ -37,17 +37,17 @@ export function ProjectCard({
         />
       </div>
       <div className="p-6">
-        <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+        <h3 className="text-xl font-semibold text-white mb-2">
           {title}
         </h3>
-        <p className="text-gray-600 dark:text-gray-300 mb-4">
+        <p className="text-gray-300 mb-4">
           {description}
         </p>
         <div className="flex flex-wrap gap-2 mb-4">
           {tags.map((tag) => (
             <span
               key={tag}
-              className="px-2 py-1 text-sm bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 rounded"
+              className="px-2 py-1 text-sm bg-primary-900 text-primary-200 rounded"
             >
               {tag}
             </span>
@@ -55,7 +55,7 @@ export function ProjectCard({
         </div>
         <Link
           href={link}
-          className="inline-flex items-center text-primary-600 dark:text-primary-400 hover:underline"
+          className="inline-flex items-center text-primary-400 hover:underline"
         >
           View Project
           <svg

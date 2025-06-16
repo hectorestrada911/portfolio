@@ -16,10 +16,10 @@ export default function SkillBar({ name, percent, colorClass = 'bg-primary-500' 
   return (
     <div className="mb-4">
       <div className="flex justify-between mb-1">
-        <span className="text-sm font-medium text-gray-700 dark:text-gray-200">{name}</span>
-        <span className="text-xs text-gray-500 dark:text-gray-400">{percent}%</span>
+        <span className="text-sm font-medium text-gray-200">{name}</span>
+        <span className="text-xs text-gray-400">{percent}%</span>
       </div>
-      <div className="w-full bg-gray-200 dark:bg-gray-800 rounded-full h-3">
+      <div className="w-full bg-gray-800 rounded-full h-3">
         <div
           className={`h-3 rounded-full transition-all duration-700 ${colorClass}`}
           style={{ width: `${width}%` }}

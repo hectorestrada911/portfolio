@@ -106,19 +106,19 @@ export default function Home() {
         </section>
 
         {/* About Section */}
-        <section id="about" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
+        <section id="about" className="py-16 px-4 sm:px-6 lg:px-8 bg-[#0f172a]">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl font-bold text-primary-600 dark:text-primary-400 mb-2 text-center">About Me</h2>
             <p className="text-base text-gray-500 dark:text-gray-400 mb-8 text-center">A quick snapshot of my journey, skills, and goals.</p>
             <div className="text-center mb-12 flex justify-center">
-              <div className="bg-[#1f2937] rounded-2xl p-6 shadow-lg w-full max-w-2xl mx-auto">
+              <div className="bg-[#181c24] rounded-2xl p-6 shadow-lg w-full max-w-2xl mx-auto">
                 <p className="text-lg text-gray-100 font-medium">
                   I love building software — from intuitive interfaces to scalable backend systems. My goal is to become a <span className="font-semibold text-primary-600 dark:text-primary-400">full-stack engineer</span> with a strong foundation in <span className="font-semibold text-primary-600 dark:text-primary-400">systems</span>, <span className="font-semibold text-primary-600 dark:text-primary-400">problem solving</span>, and modern tools.
                 </p>
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-md p-6 flex flex-col gap-2 transition hover:shadow-lg hover:border-primary-400 dark:hover:border-primary-500">
+              <div className="bg-[#181c24] rounded-xl border border-gray-700 shadow-md p-6 flex flex-col gap-2 transition hover:shadow-lg hover:border-primary-500">
                 <div className="flex items-center gap-2 mb-2">
                   <AcademicCapIcon className="w-6 h-6 text-primary-600 dark:text-primary-400" />
                   <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">Background</h3>
@@ -127,7 +127,7 @@ export default function Home() {
                   Computer Science student at SDSU with a passion for solving real problems through code. I enjoy working on <span className="font-semibold text-primary-600 dark:text-primary-400">full-stack applications</span>, building APIs, and learning new technologies that help me deliver clean, efficient software.
                 </p>
               </div>
-              <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-md p-6 flex flex-col gap-2 transition hover:shadow-lg hover:border-primary-400 dark:hover:border-primary-500">
+              <div className="bg-[#181c24] rounded-xl border border-gray-700 shadow-md p-6 flex flex-col gap-2 transition hover:shadow-lg hover:border-primary-500">
                 <div className="flex items-center gap-2 mb-2">
                   <RocketLaunchIcon className="w-6 h-6 text-primary-600 dark:text-primary-400" />
                   <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">Goals</h3>
@@ -146,7 +146,7 @@ export default function Home() {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="py-16 px-4 sm:px-6 lg:px-8">
+        <section id="projects" className="py-16 px-4 sm:px-6 lg:px-8 bg-[#0f172a]">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">My Projects</h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-12 text-center max-w-3xl mx-auto">
@@ -160,7 +160,7 @@ export default function Home() {
                 idx === 0 ? (
                   <div
                     key={project.title}
-                    className="relative rounded-3xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-lg bg-white/70 dark:bg-gray-900/70 backdrop-blur-md flex flex-col group transform transition-all duration-300 hover:shadow-2xl"
+                    className="relative rounded-3xl overflow-hidden border border-gray-700 shadow-lg bg-[#181c24] flex flex-col group transform transition-all duration-300 hover:shadow-2xl"
                   >
                     {/* Image with overlay, title, and badge */}
                     <div className="relative h-56 w-full overflow-hidden">
@@ -184,7 +184,7 @@ export default function Home() {
                     {/* Divider */}
                     <div className="h-1 w-full bg-gradient-to-r from-blue-500/30 via-cyan-400/20 to-transparent" />
                     {/* Content area */}
-                    <div className="p-6 flex-1 flex flex-col bg-white/60 dark:bg-gray-900/60 backdrop-blur-md">
+                    <div className="p-6 flex-1 flex flex-col bg-[#181c24]">
                       <p className="text-gray-700 dark:text-gray-200 mb-4 text-sm">{project.description}</p>
                       <div className="flex flex-wrap gap-2 mb-4">
                         {project.tags.map((tag) => (
@@ -223,7 +223,7 @@ export default function Home() {
                 ) : (
                   <div
                     key={project.title}
-                    className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden flex flex-col transform transition-all duration-300 hover:scale-105 hover:shadow-xl group relative"
+                    className="bg-[#181c24] rounded-2xl shadow-lg overflow-hidden flex flex-col transform transition-all duration-300 hover:scale-105 hover:shadow-xl group relative"
                   >
                     <div className="h-48 w-full relative">
           <Image
@@ -277,7 +277,7 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900 flex justify-center">
+        <section id="contact" className="py-16 px-4 sm:px-6 lg:px-8 bg-[#0f172a] flex justify-center">
           <div className="w-full max-w-2xl">
             <ContactForm />
           </div>

@@ -14,14 +14,13 @@ const navigation = [
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
-  const { theme, toggleTheme } = useTheme();
 
   return (
-    <nav className="fixed w-full bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 z-50">
+    <nav className="fixed w-full bg-[#181c24] border-b border-gray-800 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <a href="#home" className="text-xl font-bold text-primary-600 dark:text-primary-400">
+            <a href="#home" className="text-xl font-bold text-primary-400">
               HE
             </a>
           </div>
@@ -32,29 +31,18 @@ export function Navigation() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 px-3 py-2 text-sm font-medium"
+                className="text-gray-300 hover:text-primary-400 px-3 py-2 text-sm font-medium"
               >
                 {item.name}
               </a>
             ))}
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
-              aria-label="Toggle theme"
-            >
-              {theme === 'dark' ? (
-                <SunIcon className="h-5 w-5" />
-              ) : (
-                <MoonIcon className="h-5 w-5" />
-              )}
-            </button>
           </div>
 
           {/* Mobile menu button */}
           <div className="flex items-center sm:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="p-2 rounded-lg text-gray-300 hover:bg-gray-800"
               aria-label="Toggle menu"
             >
               {isOpen ? (
@@ -79,18 +67,12 @@ export function Navigation() {
             <a
               key={item.name}
               href={item.href}
-              className="block text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 px-3 py-2 text-base font-medium"
+              className="block text-gray-300 hover:text-primary-400 px-3 py-2 text-base font-medium"
               onClick={() => setIsOpen(false)}
             >
               {item.name}
             </a>
           ))}
-          <button
-            onClick={toggleTheme}
-            className="w-full text-left px-3 py-2 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 text-base font-medium"
-          >
-            {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
-          </button>
         </div>
       </div>
     </nav>
