@@ -18,25 +18,12 @@ const projects = [
     codeUrl: 'https://github.com/hectorestrada911/bidme',
   },
   {
-    title: 'E-commerce Platform',
-    description: 'A full-stack e-commerce platform built with Next.js, TypeScript, and MongoDB. Features include user authentication, product management, and payment processing.',
-    imageUrl: '/projects/ecommerce.jpg',
-    tags: ['Next.js', 'TypeScript', 'MongoDB', 'Stripe'],
-    link: '#',
-  },
-  {
-    title: 'Task Management App',
-    description: 'A React-based task management application with real-time updates using WebSocket. Includes features like task prioritization, team collaboration, and progress tracking.',
-    imageUrl: '/projects/taskmanager.jpg',
-    tags: ['React', 'Node.js', 'WebSocket', 'PostgreSQL'],
-    link: '#',
-  },
-  {
-    title: 'Weather Dashboard',
-    description: 'A weather dashboard that displays current and forecasted weather data using various APIs. Built with Python Flask and modern JavaScript.',
-    imageUrl: '/projects/weather.jpg',
-    tags: ['Python', 'Flask', 'JavaScript', 'OpenWeather API'],
-    link: '#',
+    title: 'BudgetWise (In Progress)',
+    description: 'A personal finance and budgeting app to help users track expenses, set savings goals, and visualize spending. Built with Next.js, TypeScript, and MongoDB. (Coming soon!)',
+    imageUrl: '/projects/budgetwise.jpg',
+    tags: ['Next.js', 'TypeScript', 'MongoDB'],
+    liveUrl: '#',
+    codeUrl: '#',
   },
 ];
 
