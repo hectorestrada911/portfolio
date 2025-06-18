@@ -17,13 +17,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
+    <html lang="en">
       <head>
-        <meta name="color-scheme" content="dark light" />
+        <meta name="color-scheme" content="light" />
+        <meta name="theme-color" content="#ffffff" />
       </head>
       <body className={inter.className}>
         <ThemeProvider>
-          <main className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+          <main className="min-h-screen text-gray-900">
             {children}
           </main>
           <footer className="w-full border-t border-gray-200 dark:border-gray-800 py-6 flex flex-col items-center justify-center mt-12">

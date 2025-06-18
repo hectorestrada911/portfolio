@@ -30,7 +30,7 @@ export default function Projects() {
     <>
       <Navigation />
       <div className="pt-16">
-        <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-transparent">
           <div className="max-w-7xl mx-auto">
             <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-8 text-center">
               My Projects

@@ -24,7 +24,7 @@ export default function About() {
     <>
       <Navigation />
       <div className="pt-16">
-        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#0f172a]">
+        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-transparent">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
               <h1 className="text-4xl font-bold text-white mb-6">
@@ -37,7 +37,7 @@ export default function About() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
-              <div className="bg-[#181c24] rounded-lg p-6 shadow-lg">
+              <div className="bg-white rounded-lg p-6 shadow-lg">
                 <h2 className="text-2xl font-semibold text-white mb-4">
                   Background
                 </h2>
@@ -52,7 +52,7 @@ export default function About() {
                 </p>
               </div>
 
-              <div className="bg-[#181c24] rounded-lg p-6 shadow-lg">
+              <div className="bg-white rounded-lg p-6 shadow-lg">
                 <h2 className="text-2xl font-semibold text-white mb-4">
                   Goals
                 </h2>
@@ -68,7 +68,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="bg-[#181c24] rounded-lg p-6 shadow-lg">
+            <div className="bg-white rounded-lg p-6 shadow-lg">
               <h2 className="text-2xl font-semibold text-white mb-8 text-center">
                 Skills & Technologies
               </h2>
@@ -76,7 +76,7 @@ export default function About() {
                 {skills.map((skillGroup) => (
                   <div
                     key={skillGroup.category}
-                    className="bg-[#181c24] rounded-lg p-6 shadow-lg"
+                    className="bg-white rounded-lg p-6 shadow-lg"
                   >
                     <h3 className="text-lg font-semibold text-white mb-4">
                       {skillGroup.category}

@@ -50,30 +50,34 @@ export default function Home() {
       <Navigation />
       <div className="pt-16">
         {/* Hero Section */}
-        <section id="home" className="min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#1e293b] to-[#0f172a] transition-colors duration-700">
+        <section
+          id="home"
+          className="min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-8 transition-colors duration-700"
+          style={{ background: "var(--background)" }}
+        >
           <div className="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center justify-between gap-8 mt-16 sm:mt-24 md:mt-0">
             {/* Left: Intro */}
             <div className="flex-1 text-center md:text-left md:pr-8 animate-hero-fade-in">
               <div className="transition-all duration-700 opacity-0 animate-fade-in-slide-up">
-                <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 dark:text-white mb-4 md:mb-6 md:ml-4">
-                  Hector <span className="text-blue-500 dark:text-blue-400">Estrada</span>
+                <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 mb-4 md:mb-6 md:ml-4">
+                  Hector <span className="text-blue-600">Estrada</span>
                 </h1>
-                <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-10 md:ml-4 max-w-xl md:max-w-2xl mx-auto md:mx-0">
+                <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-10 md:ml-4 max-w-xl md:max-w-2xl mx-auto md:mx-0">
                   Computer Science student at SDSU specializing in software engineering, scalable systems, and full-stack apps.<br />
                   Actively seeking software engineering internships — eager to build, learn, and ship great products.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start md:ml-4">
-                  <a href="#projects" className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-600 transition-transform duration-200 hover:scale-105">View Projects</a>
-                  <a href="#contact" className="inline-flex items-center justify-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-base font-medium rounded-md text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-transform duration-200 hover:scale-105">Contact Me</a>
-                  <a href="/hector-estrada-portfolio.pdf" download className="inline-flex items-center justify-center px-6 py-3 border border-blue-500 text-base font-medium rounded-md text-blue-600 dark:text-blue-400 bg-white dark:bg-gray-900 hover:bg-blue-50 dark:hover:bg-gray-800 transition-transform duration-200 hover:scale-105">Download Resume</a>
+                  <a href="#projects" className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-transform duration-200 hover:scale-105">View Projects</a>
+                  <a href="#contact" className="inline-flex items-center justify-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-100 transition-transform duration-200 hover:scale-105">Contact Me</a>
+                  <a href="/hector-estrada-portfolio.pdf" download className="inline-flex items-center justify-center px-6 py-3 border border-blue-500 text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50 transition-transform duration-200 hover:scale-105">Download Resume</a>
                 </div>
                 <div className="flex justify-center items-center gap-4 mt-12">
-                  <a href="https://github.com/hectorestrada911" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-md text-2xl text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 transition-transform duration-200 hover:scale-110 focus:outline-none" aria-label="GitHub">
+                  <a href="https://github.com/hectorestrada911" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-md text-2xl text-gray-700 hover:text-blue-600 transition-transform duration-200 hover:scale-110 focus:outline-none" aria-label="GitHub">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-7 h-7">
                       <path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.987 1.029-2.686-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.397.1 2.65.64.699 1.028 1.593 1.028 2.686 0 3.847-2.338 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .267.18.577.688.48C19.138 20.203 22 16.447 22 12.021 22 6.484 17.523 2 12 2Z" />
                     </svg>
                   </a>
-                  <a href="https://www.linkedin.com/in/hector-estrada-5b1351213/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-md text-2xl text-blue-700 dark:text-blue-400 hover:text-primary-600 dark:hover:text-primary-400 transition-transform duration-200 hover:scale-110 focus:outline-none" aria-label="LinkedIn">
+                  <a href="https://www.linkedin.com/in/hector-estrada-5b1351213/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-md text-2xl text-blue-700 hover:text-blue-800 transition-transform duration-200 hover:scale-110 focus:outline-none" aria-label="LinkedIn">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-7 h-7">
                       <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.156 1.459-2.156 2.968v5.699h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.838-1.563 3.034 0 3.595 1.997 3.595 4.59v5.606z" />
                     </svg>
@@ -88,55 +92,55 @@ export default function Home() {
           </div>
           {/* Scroll Indicator */}
           <div className="flex justify-center mt-12 md:mt-20 animate-pulse-slow">
-            <span className="inline-block text-gray-400 dark:text-gray-500 text-3xl">↓</span>
+            <span className="inline-block text-gray-400 text-3xl">↓</span>
           </div>
         </section>
 
         {/* About Section */}
-        <section id="about" className="py-16 px-4 sm:px-6 lg:px-8 bg-[#0f172a]">
+        <section id="about" className="py-16 px-4 sm:px-6 lg:px-8 bg-transparent">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl font-bold text-primary-600 dark:text-primary-400 mb-2 text-center">About Me</h2>
-            <p className="text-base text-gray-500 dark:text-gray-400 mb-8 text-center">A quick snapshot of my journey, skills, and goals.</p>
+            <h2 className="text-3xl font-bold text-blue-600 mb-2 text-center">About Me</h2>
+            <p className="text-base text-gray-500 mb-8 text-center">A quick snapshot of my journey, skills, and goals.</p>
             <div className="text-center mb-12 flex justify-center">
-              <div className="bg-[#181c24] rounded-2xl p-6 shadow-lg w-full max-w-2xl mx-auto">
-                <p className="text-lg text-gray-100 font-medium">
-                  I love building software — from intuitive interfaces to scalable backend systems. My goal is to become a <span className="font-semibold text-primary-600 dark:text-primary-400">full-stack engineer</span> with a strong foundation in <span className="font-semibold text-primary-600 dark:text-primary-400">systems</span>, <span className="font-semibold text-primary-600 dark:text-primary-400">problem solving</span>, and modern tools.
+              <div className="bg-gray-100 rounded-2xl p-6 shadow-lg w-full max-w-2xl mx-auto">
+                <p className="text-lg text-gray-900 font-medium">
+                  I love building software — from intuitive interfaces to scalable backend systems. My goal is to become a <span className="font-semibold text-blue-600">full-stack engineer</span> with a strong foundation in <span className="font-semibold text-blue-600">systems</span>, <span className="font-semibold text-blue-600">problem solving</span>, and modern tools.
                 </p>
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-[#181c24] rounded-xl border border-gray-700 shadow-md p-6 flex flex-col gap-2 transition hover:shadow-lg hover:border-primary-500">
+              <div className="bg-gray-100 rounded-xl border border-gray-200 shadow-md p-6 flex flex-col gap-2 transition hover:shadow-lg hover:border-blue-400">
                 <div className="flex items-center gap-2 mb-2">
-                  <AcademicCapIcon className="w-6 h-6 text-primary-600 dark:text-primary-400" />
-                  <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">Background</h3>
+                  <AcademicCapIcon className="w-6 h-6 text-blue-600" />
+                  <h3 className="text-2xl font-semibold text-gray-900">Background</h3>
                 </div>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Computer Science student at SDSU with a passion for solving real problems through code. I enjoy working on <span className="font-semibold text-primary-600 dark:text-primary-400">full-stack applications</span>, building APIs, and learning new technologies that help me deliver clean, efficient software.
+                <p className="text-gray-700">
+                  Computer Science student at SDSU with a passion for solving real problems through code. I enjoy working on <span className="font-semibold text-blue-600">full-stack applications</span>, building APIs, and learning new technologies that help me deliver clean, efficient software.
                 </p>
               </div>
-              <div className="bg-[#181c24] rounded-xl border border-gray-700 shadow-md p-6 flex flex-col gap-2 transition hover:shadow-lg hover:border-primary-500">
+              <div className="bg-gray-100 rounded-xl border border-gray-200 shadow-md p-6 flex flex-col gap-2 transition hover:shadow-lg hover:border-blue-400">
                 <div className="flex items-center gap-2 mb-2">
-                  <RocketLaunchIcon className="w-6 h-6 text-primary-600 dark:text-primary-400" />
-                  <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">Goals</h3>
+                  <RocketLaunchIcon className="w-6 h-6 text-blue-600" />
+                  <h3 className="text-2xl font-semibold text-gray-900">Goals</h3>
                 </div>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Seeking <span className="font-semibold text-primary-600 dark:text-primary-400">internship opportunities</span> where I can grow as a software engineer. Long-term, I aim to become a <span className="font-semibold text-primary-600 dark:text-primary-400">full-stack developer</span> capable of designing robust systems and contributing across the stack — from frontend logic to backend performance.
+                <p className="text-gray-700">
+                  Seeking <span className="font-semibold text-blue-600">internship opportunities</span> where I can grow as a software engineer. Long-term, I aim to become a <span className="font-semibold text-blue-600">full-stack developer</span> capable of designing robust systems and contributing across the stack — from frontend logic to backend performance.
                 </p>
               </div>
             </div>
             <div className="text-center mt-8">
-              <p className="text-lg text-gray-700 dark:text-gray-200 font-medium">
-                Want to know more about my journey? <span className="text-primary-600 dark:text-primary-400 font-semibold">Let&apos;s connect.</span>
+              <p className="text-lg text-gray-700 font-medium">
+                Want to know more about my journey? <span className="text-blue-600 font-semibold">Let&apos;s connect.</span>
               </p>
             </div>
           </div>
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="py-16 px-4 sm:px-6 lg:px-8 bg-[#0f172a]">
+        <section id="projects" className="py-16 px-4 sm:px-6 lg:px-8 bg-transparent">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">My Projects</h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 mb-12 text-center max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">My Projects</h2>
+            <p className="text-xl text-gray-700 mb-12 text-center max-w-3xl mx-auto">
               Here are some of my recent projects that showcase my skills in web development, backend programming, and full-stack integration.
             </p>
             <div className="flex justify-center mb-8">
@@ -172,12 +176,12 @@ export default function Home() {
                     <div className="h-1 w-full bg-gradient-to-r from-blue-500/30 via-cyan-400/20 to-transparent" />
                     {/* Content area */}
                     <div className="p-6 flex-1 flex flex-col bg-[#181c24]">
-                      <p className="text-gray-700 dark:text-gray-200 mb-4 text-sm">{project.description}</p>
+                      <p className="text-gray-700 mb-4 text-sm">{project.description}</p>
                       <div className="flex flex-wrap gap-2 mb-4">
                         {project.tags.map((tag) => (
                           <span
                             key={tag}
-                            className="px-2 py-0.5 text-xs font-medium rounded-full bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-200"
+                            className="px-2 py-0.5 text-xs font-medium rounded-full bg-gray-200 text-gray-700"
                           >
                             {tag}
                           </span>
@@ -189,7 +193,7 @@ export default function Home() {
                             href={project.liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-                            className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-lg bg-primary-600 text-white hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-600 transition gap-2 shadow-sm"
+                            className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-lg bg-primary-600 text-white hover:bg-primary-700 transition gap-2 shadow-sm"
                           >
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                             View Live
@@ -198,7 +202,7 @@ export default function Home() {
                             href={project.codeUrl}
             target="_blank"
             rel="noopener noreferrer"
-                            className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-lg border border-primary-600 text-primary-600 dark:text-primary-400 hover:bg-primary-50 dark:hover:bg-primary-900 transition gap-2 shadow-sm"
+                            className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-lg border border-primary-600 text-primary-600 hover:bg-primary-50 hover:border-primary-500 transition gap-2 shadow-sm"
           >
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M8 16v-8m8 8v-8M3 20h18" /></svg>
                             View Code
@@ -221,13 +225,13 @@ export default function Home() {
                       />
                     </div>
                     <div className="p-6 flex-1 flex flex-col">
-                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{project.title}</h3>
-                      <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
+                      <h3 className="text-xl font-semibold text-gray-900 mb-2">{project.title}</h3>
+                      <p className="text-gray-600 mb-4">{project.description}</p>
                       <div className="flex flex-wrap gap-2 mb-4">
                         {project.tags.map((tag) => (
                           <span
                             key={tag}
-                            className={`px-3 py-1 text-xs font-semibold rounded-full ${techColors[tag] || 'bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200'} transition-colors duration-200`}
+                            className={`px-3 py-1 text-xs font-semibold rounded-full ${techColors[tag] || 'bg-primary-100 text-primary-800'} transition-colors duration-200`}
                           >
                             {tag}
                           </span>
@@ -239,7 +243,7 @@ export default function Home() {
                             href={project.liveUrl}
           target="_blank"
           rel="noopener noreferrer"
-                            className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded bg-primary-600 text-white hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-600 transition gap-2"
+                            className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded bg-primary-600 text-white hover:bg-primary-700 transition gap-2"
                           >
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                             View Live
@@ -248,7 +252,7 @@ export default function Home() {
                             href={project.codeUrl}
           target="_blank"
           rel="noopener noreferrer"
-                            className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded border border-primary-600 text-primary-600 dark:text-primary-400 hover:bg-primary-50 dark:hover:bg-primary-900 transition gap-2"
+                            className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded border border-primary-600 text-primary-600 hover:bg-primary-50 hover:border-primary-500 transition gap-2"
                           >
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M8 16v-8m8 8v-8M3 20h18" /></svg>
                             View Code
@@ -264,7 +268,7 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="py-16 px-4 sm:px-6 lg:px-8 bg-[#0f172a] flex justify-center">
+        <section id="contact" className="py-16 px-4 sm:px-6 lg:px-8 bg-transparent flex justify-center">
           <div className="w-full max-w-2xl">
             <ContactForm />
           </div>
